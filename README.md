@@ -1,6 +1,6 @@
 # dev-challenge-time-tracker
 
-![image](https://user-images.githubusercontent.com/462459/119384643-ed893d80-bcbc-11eb-8d4d-99a02c4666a2.png)
+![image](https://user-images.githubusercontent.com/462459/119385523-2544b500-bcbe-11eb-8f84-604fb68adfec.png)
 
 ### Running locally
 
