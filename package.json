@@ -1,10 +1,8 @@
 {
   "name": "lh-dev-task-time-tracker",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "default": "gulp",
     "build": "gulp build",
     "watch": "gulp watch"
   },
