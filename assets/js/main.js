@@ -1,10 +1,12 @@
 import * as noUiSliderInit from "nouislider";
 
 const slider = document.getElementById('slider');
+const inputs = [...document.querySelectorAll('input.segment-value')];
+const cumulativeSum = sum => element => sum += parseInt(element.value);
 
 window.noUiSlider.create(slider, {
-  start: [25, 50],
-  connect: [ true, true, true ],
+  start: inputs.slice(0, inputs.length - 1).map(cumulativeSum(0)),
+  connect: Array(inputs.length).fill(true),
   step: 1,
   range: {
     'min': 0,
@@ -12,10 +14,8 @@ window.noUiSlider.create(slider, {
   },
 });
 
-const inputs = [...document.querySelectorAll('input.segment-value')];
-
 function handleInputChange(event) {
-  const newSliderValues = new Array(inputs.length - 1);
+  const newSliderValues = Array(inputs.length - 1);
   const targetIndex = inputs.indexOf(event.target);
 
   if (targetIndex < inputs.length - 1) {
