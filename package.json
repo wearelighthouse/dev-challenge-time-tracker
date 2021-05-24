@@ -1,0 +1,21 @@
+{
+  "name": "lh-dev-task-time-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "default": "gulp",
+    "build": "gulp build",
+    "watch": "gulp watch"
+  },
+  "author": "John Evans <dev@wearelighthouse.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "nouislider": "^15.1.1",
+    "rollup": "^2.49.0"
+  }
+}
