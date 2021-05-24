@@ -1,1 +1,22 @@
 @import '../../node_modules/nouislider/dist/nouislider.css';
+
+$color-orange: #fc895b;
+$color-pink: #ff268b;
+$color-purple: #b71bba;
+
+.lh-time-tracker {
+  padding: 2rem;
+  box-shadow: 0 0 4px rgba(#000, .2);
+}
+
+.noUi-connect:nth-child(1) {
+  background: $color-orange;
+}
+
+.noUi-connect:nth-child(2) {
+  background: $color-pink;
+}
+
+.noUi-connect:nth-child(3) {
+  background: $color-purple;
+}
